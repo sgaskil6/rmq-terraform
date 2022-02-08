@@ -1,11 +1,11 @@
 variable "name" {
-	description = "Name the instance on deploy"
+    description = "Name the instance on deploy"
 }
 
 variable "group" {
-	description = "the group tag for ansible to identify RMQ"
+    description = "The group tag for Ansible to identify RMQ"
 }
 
 variable "profile" {
-	description = "profile to be used for deployment"
+    description = "Which profile to use for IAM"
 }
