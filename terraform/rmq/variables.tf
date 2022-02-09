@@ -10,5 +10,5 @@ variable "group" {
 
 variable "profile" {
     description = "Which profile to use for IAM"
-    default = []
+    default = {}
 }
