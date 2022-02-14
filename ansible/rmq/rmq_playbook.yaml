@@ -4,7 +4,7 @@
 
       tasks:
 
-        - name: Install RabbitMQ
+        - name: Install RMQ
           become: yes
           shell: |
             apt-get update -y
@@ -18,11 +18,11 @@
             apt-get update -y
             apt-get install rabbitmq-server -y --fix-missing
 
-        - name: Start RabbitMQ
+        - name: Start RMQ
           become: yes
-          shell: service rabbitmq-server Start
+          shell: service rabbitmq-server start
 
-        - name: Enable RabbitMQ Admin Dash 
+        - name: Enable RabbitMQ Admin Dash GUI
           become: yes
           shell: rabbitmq-plugins enable rabbitmq_management
 
